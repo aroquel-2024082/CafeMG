@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria MG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <h5 class="title-icono-mg">MG</h5>
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#shop">Tienda</a></li>
+            <li><a href="#delivery">Domicilio</a></li>
+            <li><a href="#app">Aplicacion</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <a href="javascript:void(0)" class="shop-icon-one">
+            <i class="uil uil-shopping-bag"></i>
+            <span class="cart-number">0</span>
+        </a>
+        <a href="index.html" class="user-icon-one">
+            <i class="uil uil-user-md"></i>
+        </a>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <span>Bienvenido a</span>
+            <h1>Cafeteria MG</h1>
+            <h2>El cafe es una <br>adiccion</h2>
+            <a href="#" class="btn">Unete Ahora</a>
+        </div>
+        <div class="home-img">
+            <img src="images/leaf.png" alt="">
+        </div>
+    </section>
+
+    <section class="shop" id="shop">
+        <div class="heading">
+            <span>Compra Ahora</span>
+            <h1>Compra Café</h1>
+        </div>
+        <div class="shop-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Calientes1.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Bebidas Calientes</h2>
+                <p>Cafe Negro MG</p>
+                <span>Q10.00</span>
+                <a href="#" class="btn" onclick="abrirModal('modal-calientes')">Ver Menú</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Panaderia1.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Panaderia</h2>
+                <p>Croasant MG</p>
+                <span>Q12.00</span>
+                <a href="#" class="btn" onclick="abrirModal('modal-panaderia')">Ver Menu</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Frias1.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Bebidas Frias</h2>
+                <p>Frappe Caramelo MG</p>
+                <span>Q17.00</span>
+                <a href="#" class="btn" onclick="abrirModal('modal-frias')">Ver Menu</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Postre1.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Postres Frios</h2>
+                <p>Pastel Fresa MG</p>
+                <span>Q16.00</span>
+                <a href="#" class="btn" onclick="abrirModal('modal-postres')">Ver Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-calientes" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal-calientes')">&times;</span>
+            <h1 class="title">Menu De Bebidas Calientes</h1>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide box">
+                        <img src="images/Calientes2.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Café Capuchino</h2>
+                        <p>Unidad</p>
+                        <span>Q10.00</span>
+                    </div>
+                    <div class="slide box">
+                        <img src="images/Calientes3.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Café Expresso</h2>
+                        <p>Unidad</p>
+                        <span>Q12.00</span>
+                    </div>
+                    <div class="slide box">
+                        <img src="images/Calientes4.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Atol De Elote</h2>
+                        <p>Unidad</p>
+                        <span>Q12.50</span>
+                    </div>
+                    <div class="slide box">
+                        <img src="images/Calientes5.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Chocolate</h2>
+                        <p>Unidad</p>
+                        <span>Q13.00</span>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="prevSlide('modal-calientes')">&#10094;</button>
+                    <button onclick="nextSlide('modal-calientes')">&#10095;</button>
+                </div>
+            </div>
+            <div class="dots-container"></div>
+        </div>
+    </div>
+
+    <div id="modal-panaderia" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal-panaderia')">&times;</span>
+            <h1 class="title">Menu De Panaderia</h1>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide box">
+                        <img src="images/Panaderia2.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Croasant</h2>
+                        <p>Unidad</p>
+                        <span>Q10.00</span>
+                    </div>
+                    <div class="slide box">
+                        <img src="images/Panaderia3.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Muffin</h2>
+                        <p>Unidad</p>
+                        <span>Q8.00</span>
+                    </div>
+                    <div class="slide box">
+                        <img src="images/Panaderia4.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Croasant Italiano</h2>
+                        <p>Unidad</p>
+                        <span>Q15.00</span>
+                    </div>
+                    <div class="slide box">
+                        <img src="images/Panaderia5.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Donas</h2>
+                        <p>Unidad</p>
+                        <span>Q6.00</span>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="prevSlide('modal-panaderia')">&#10094;</button>
+                    <button onclick="nextSlide('modal-panaderia')">&#10095;</button>
+                </div>
+            </div>
+            <div class="dots-container"></div>
+        </div>
+    </div>
+
+    <div id="modal-frias" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal-frias')">&times;</span>
+            <h1 class="title">Menu De Bebidas Frias</h1>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide box">
+                        <img src="images/Frias2.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Limonada</h2>
+                        <p>Unidad</p>
+                        <span>Q16.00</span>
+                    </div>
+                    <div class="slide box">
+                        <img src="images/Frias3.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Frappe Oreo</h2>
+                        <p>Unidad</p>
+                        <span>Q13.00</span>
+                    </div>
+                    <div class="slide box">
+                        <img src="images/Frias4.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Agua Pura</h2>
+                        <p>Unidad</p>
+                        <span>Q9.00</span>
+                    </div>
+                    <div class="slide box">
+                        <img src="images/Frias5.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Frappe Pistacho</h2>
+                        <p>Unidad</p>
+                        <span>Q20.00</span>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="prevSlide('modal-frias')">&#10094;</button>
+                    <button onclick="nextSlide('modal-frias')">&#10095;</button>
+                </div>
+            </div>
+            <div class="dots-container"></div>
+        </div>
+    </div>
+
+    <div id="modal-postres" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal-postres')">&times;</span>
+            <h1 class="title">Menu De Postres Frios</h1>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide box">
+                        <img src="images/Postre2.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Plato De Helado</h2>
+                        <p>Unidad</p>
+                        <span>Q21.00</span>
+                    </div>
+                    <div class="slide box">
+                        <img src="images/Postre3.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Pastel Napolitano</h2>
+                        <p>Unidad</p>
+                        <span>Q120.00</span>
+                    </div>
+                    <div class="slide box">
+                        <img src="images/Postre4.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Pastel Fresa</h2>
+                        <p>Unidad</p>
+                        <span>Q18.00</span>
+                    </div>
+                    <div class="slide box">
+                        <img src="images/Postre5.png" alt="">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <h2>Helado Pistacho</h2>
+                        <p>Unidad</p>
+                        <span>Q18.00</span>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="prevSlide('modal-postres')">&#10094;</button>
+                    <button onclick="nextSlide('modal-postres')">&#10095;</button>
+                </div>
+            </div>
+            <div class="dots-container"></div>
+        </div>
+    </div>
+
+    <section class="delivery" id="delivery">
+        <div class="heading">
+            <span>Llegar Ahora</span>
+            <h1>Ordenar Adomicilio</h1>
+        </div>
+        <div class="container">
+            <div class="delivery-img">
+                <img src="images/delivery.png" alt="">
+            </div>
+            <div class="delivery-text">
+                <h2>Servicio todos los dias</h2>
+                <p>
+                    Hola Amigo por el momento lamento comentarte que la empresa no cuenta con servicios a domicilio en
+                    estos momentos, pero estaremos gustosos de recibir tus pedidos y de ir a las puertas de tu casa a
+                    entregarte tu pedido cuando la empresa cuente con servicio adomicilio se les notificara a los
+                    usuarios.
+                </p>
+                <a href="#" class="btn">Ordena Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="app" id="app">
+        <div class="heading">
+            <span>Aplicacion</span>
+            <h1>Descargar App</h1>
+        </div>
+        <div class="container">
+            <div class="app-text">
+                <h2>Servicio todos los dias</h2>
+                <p>
+                    Hola, de momento no contamos con una aplicacion movil funciona, pero si con esta pagina te agradezco
+                    por tomarte el tiempo de leer y dejarjnos consentirte, en MG cafeterias la adiccion es buena.
+                </p>
+                <a href="#" class="btn">Descargar Ya</a>
+            </div>
+            <div class="app-img">
+                <img src="images/MGApp.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/personal.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Cafeterias MG es una cadena de cafeterias y restaurantes que ofrecen un buen servicio a sus clientes
+                desde los años 2000 con una variedad de productos para todo tipo de gustos te agradezco por escojer a MG
+                como tu cafeteria de confianza.
+            </p>
+            <p>
+                Aca sabemos consentirlos.
+            </p>
+            <a href="#" class="btn">Conocenos</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-telegram'></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Politicas de Privacidad</a>
+            <a href="#">Terminos de Uso</a>
+            <a href="#">Nuestra Empresa</a>
+        </div>
+        <p>&#169; Todos los derechos reservados.</p>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
